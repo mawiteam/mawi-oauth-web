@@ -10,8 +10,9 @@ To start working with Mawi OAuth client you need to contact Mawi Solutions CTO v
 
 To start working you need to receive next things from Mawi Team :
 1) URL - web-page address
-2) Client ID - your application ID
-3) Client Secret - unique token for your application to authorize requests
+2) URL for API endpoints - Request access to API documentation(updae/revoke tokens etc.)
+3) Client ID - your application ID
+4) Client Secret - unique token for your application to authorize requests
 
 ### 2. Installing
 
