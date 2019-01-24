@@ -16,7 +16,7 @@ To start working you need to receive next things from Mawi Team :
 
 ### 2. Installing and Deployment
 
-Cross-domain pop-up built with **zoid**, to use it on your page, load scripts <URL>/js/zoid.min.js and <URL>/js/component.js,
+Cross-domain pop-up built with **zoid**, to use it on your page, load scripts [URL]/js/zoid.min.js and [URL]/js/component.js,
 add "placeholder" DOM-node with proper id: ```<div id="mawi-login" style="display: none;"></div>``` (without display: none zoid will set width and height of "placeholder" div to the values of the pop-up), then use   
 ```
 ZoidLogin({
