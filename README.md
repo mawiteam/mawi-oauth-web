@@ -28,7 +28,7 @@ ZoidLogin({
     }).render('#mawi-login');
 ```
 to open pop-up (use onclick action, most browsers will block pop-up without this requirement).
-Use ```onLogin``` callback as a function with ```response``` argument, ```response```is an response object from API call request of Mawi User Authorization. 
+Use ```onLogin``` callback as a function with ```response``` argument, ```response```is object from API call request of Mawi User Authorization. 
 
 ## 3. Built With
 
