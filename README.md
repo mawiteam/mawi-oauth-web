@@ -14,45 +14,40 @@ To start working you need to receive next things from Mawi Team :
 3) Client ID - your application ID
 4) Client Secret - unique token for your application to authorize requests
 
-### 2. Installing
+### 2. Installing and Deployment
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
+Cross-domain pop-up built with **zoid**, to use it on your page, load scripts <URL>/js/zoid.min.js and <URL>/js/component.js,
+add "placeholder" DOM-node with proper id: ```<div id="mawi-login" style="display: none;"></div>``` (without display: none zoid will set width and height of "placeholder" div to the values of the pop-up), then use   
 ```
-Give the example
+ZoidLogin({
+      username: 'YOUR-USERNAME',
+      password: 'YOUR-PASSWORD',
+      onLogin: function (response) {
+        /*your handling of response data, such as accesToken, status, etc.*/
+      }
+    }).render('#mawi-login');
 ```
+to open pop-up (use onclick action, most browsers will block pop-up without this requirement).
+Use ```onLogin``` callback as a function with ```response``` argument, ```response```is an response object from API call request of Mawi User Authorization. 
 
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## 3. Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## 4. Built With
+## 3. Built With
 
 * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Zoid](https://github.com/krakenjs/zoid) - Cross-domain pop-up component
 
-## 5. Authors
+## 4. Authors
 
 * **Artem Malynovskyi** - *Initial work* - [artemmalynovskyi](https://github.com/artemmalynovskyi)
 * **Kostyantin Kurynni** - *Initial work* - [artemmalynovskyi](https://github.com/artemmalynovskyi)
 
 
-## 6. License
+## 5. License
 
 Will be provided soon
 
-## 7. Acknowledgments
+## 6. Acknowledgments
 
 * Hat tip to anyone whose code was used
 * Inspiration
