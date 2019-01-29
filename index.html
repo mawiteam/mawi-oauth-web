@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title id="title">Mawi</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
+  <link href="/css/main.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+</head>
+
+<body>
+  <script src="/js/zoid.min.js"></script>
+  <script src="https://oauth.mawi.band/js/component.js"></script>
+    <script>
+    function renderPopup () {
+  ZoidLogin({
+      username: 'USERNAME',
+      password: 'PASSWORD',
+      onLogin: function (response) {
+        console.log(response);
+      }
+    }).render('#mawi-login');}
+    </script>
+  <div id="mawi-login" style="display: none;"></div>
+    <div class="example-button" onclick="renderPopup()"><img class="example-logo" src="/assets/logo-white.svg" /><div class="example-text">Connect Mawi Account</div></div>
+</body>
+
+</html>
