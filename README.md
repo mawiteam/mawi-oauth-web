@@ -40,7 +40,7 @@ Use ```onLogin``` callback as a function with ```response``` argument, ```respon
 ## 4. Authors
 
 * **Artem Malynovskyi** - *Initial work* - [artemmalynovskyi](https://github.com/artemmalynovskyi)
-* **Kostyantin Kurynni** - *Initial work* - [artemmalynovskyi](https://github.com/artemmalynovskyi)
+* **Kostyantyn Kurynnyi** - *Initial work* - [kurinnyik](https://github.com/kurinnyik)
 
 
 ## 5. License
