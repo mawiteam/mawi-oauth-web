@@ -20,8 +20,8 @@ Cross-domain pop-up built with **zoid**, to use it on your page load scripts [UR
 add "placeholder" DOM-node with proper id: ```<div id="mawi-login" style="display: none;"></div>``` (without display: none zoid will set width and height of "placeholder" div to the values of the pop-up), then use   
 ```
 ZoidLogin({
-      username: 'YOUR-USERNAME',
-      password: 'YOUR-PASSWORD',
+      client_id: 'YOUR-CLIENT-ID',
+      client_secret: 'YOUR-CLIENT-SECRET',
       onLogin: function (response) {
         /*your handling of response data, such as accesToken, status, etc.*/
       }
